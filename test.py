@@ -16,7 +16,7 @@ class MyServer(BaseHTTPRequestHandler):
           self.wfile.write(bytes("<html><body><h1>Hello from Python!</h1></body></html>", "utf-8"))
 
 if __name__ == "__main__":
-    server_address = ("localhost", 8080)
+    server_address = ("144.91.83.75", 8080)
     httpd = HTTPServer(server_address, MyServer)
     print("Server avviato su http://localhost:8080")
     httpd.serve_forever()
