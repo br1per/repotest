@@ -10,7 +10,7 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        nome = "Gouk"
+        nome = "Bulma"
         if(debug=="True"):
           self.wfile.write(bytes("<html><body><h1> DEBUG-Hello from Python! Io sono "+nome+"</h1></body></html>", "utf-8"))
         else:
